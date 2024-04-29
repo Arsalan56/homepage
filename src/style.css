@@ -125,41 +125,77 @@ table {
 
 /* Meyer's Reset End */
 
-/* Body Styling */
+/* Bosdy Styling */
 
 body {
     display: flex;
     flex-direction: column;
-}
 
-/* Header styling */
-.header-bg {
-    background: blue;
-    transform-origin: bottom left;
-    transform: skewY(-7deg);
-    box-shadow: black 0px 2px 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+    /* Font Styling */
+    font-family: 'Playfair Display', serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 header {
-    transform-origin: bottom left;
-    transform: skewY(7deg);
-    width: 200px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 35px;
+
+    transform-origin: bottom left;
+    /* transform: skewY(-5deg); */
 }
 
-header > * {
-    padding-top: 20px;
+.header-bg {
+    background: #0891b2;
+    height: 320px;
+    width: 100vw;
+    position: absolute;
+    transform: skewY(-5deg);
+    transform-origin: bottom left;
+    z-index: -2;
 }
 
-@media (min-width: 1080px) {
+/* header > * {
+    transform: skewY(5deg);
+} */
+
+.profile,
+.bio {
+    box-shadow: rgba(0, 0, 0, 0.35) 4px 4px 8px;
+}
+.profile {
+    max-width: 220px;
+}
+
+.bio {
+    background: white;
+    padding: 20px 15px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+.bio {
+    display: grid;
+    grid-template: min-content 1fr min-content / 1fr;
+    row-gap: 16px;
+}
+
+.h-icons {
+    justify-self: end;
+}
+.h-icons img {
+    max-width: 1.5em;
+}
+/* @media (min-width: 1080px) {
     .header-bg {
         transform: skewY(-6deg);
     }
     header {
         transform: skewY(6deg);
     }
-}
+} */
