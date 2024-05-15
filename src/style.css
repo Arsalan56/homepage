@@ -275,6 +275,16 @@ header h1 {
     .picture > p {
         font-size: 5em;
     }
+
+    /* Main Content styling for mobile */
+    main > .cont {
+        grid-template: min-content repeat(6, 1fr) / 1fr;
+        padding: 20px 15px;
+    }
+
+    main > .cont > p {
+        text-align: center;
+    }
 }
 
 /* Tablet Screens */
@@ -332,6 +342,14 @@ header h1 {
     .bio h1 {
         margin-bottom: 4px;
     }
+
+    /* Main Content styling for tablet */
+    main > .cont {
+        padding: 30px 50px;
+        max-width: 740px;
+        box-sizing: border-box;
+        grid-template: min-content 1fr 1fr / repeat(2, 1fr);
+    }
 }
 
 /* Main section styling */
@@ -339,7 +357,7 @@ header h1 {
 .cont {
     display: grid;
     width: 100%;
-    grid-template: 1fr 1fr / repeat(3, 1fr);
+    grid-template: min-content 1fr / repeat(3, 1fr);
     gap: 20px;
     min-height: 300px;
     padding: 30px 35px;
@@ -348,7 +366,7 @@ header h1 {
 
 .project {
     background: green;
-    height: 100%;
+    height: 225px;
     width: 100%;
 }
 
@@ -357,4 +375,12 @@ main {
     flex-direction: column;
     width: 100vw;
     align-items: center;
+}
+
+.cont > p {
+    font-size: 1.5em;
+    align-self: start;
+    text-align: start;
+    grid-column-start: 1;
+    grid-column-end: -1;
 }
