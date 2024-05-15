@@ -168,7 +168,8 @@ header {
     position: absolute;
 }
 
-.main-cont {
+.main-cont,
+main {
     max-width: 950px;
 }
 
@@ -331,4 +332,29 @@ header h1 {
     .bio h1 {
         margin-bottom: 4px;
     }
+}
+
+/* Main section styling */
+
+.cont {
+    display: grid;
+    width: 100%;
+    grid-template: 1fr 1fr / repeat(3, 1fr);
+    gap: 20px;
+    min-height: 300px;
+    padding: 30px 35px;
+    box-sizing: border-box;
+}
+
+.project {
+    background: green;
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
 }
