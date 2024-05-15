@@ -136,6 +136,7 @@ table {
 body {
     display: flex;
     flex-direction: column;
+    cursor: default;
 
     /* Font Styling */
     font-family: 'Playfair Display', serif;
@@ -161,6 +162,7 @@ header {
     position: absolute;
     color: white;
     font-size: 3em;
+    padding-bottom: 4px;
 }
 
 .bio-img {
@@ -220,6 +222,7 @@ header h1 {
 
 .h-icons a {
     margin: 4px;
+    cursor: pointer;
 }
 
 /* Styling for person's name */
@@ -284,6 +287,20 @@ header h1 {
 
     main > .cont > p {
         text-align: center;
+    }
+
+    /* Mobile footer styling */
+    body footer {
+        padding: 20px 15px;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    picture {
+        margin: 0px -15px -20px -15px;
     }
 }
 
@@ -350,6 +367,14 @@ header h1 {
         box-sizing: border-box;
         grid-template: min-content 1fr 1fr / repeat(2, 1fr);
     }
+
+    /* Footer styling fot tablet */
+    body footer {
+        padding: 30px 50px;
+    }
+    footer > .footer {
+        max-width: 640px;
+    }
 }
 
 /* Main section styling */
@@ -368,6 +393,7 @@ header h1 {
     background: green;
     height: 225px;
     width: 100%;
+    cursor: pointer;
 }
 
 main {
@@ -383,4 +409,64 @@ main {
     text-align: start;
     grid-column-start: 1;
     grid-column-end: -1;
+}
+
+/* Footer Styling */
+
+footer {
+    display: flex;
+    background: #0891b2;
+    width: 100%;
+    color: white;
+    padding: 30px 35px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.footer {
+    max-width: 880px;
+    flex-grow: 1;
+    box-sizing: border-box;
+    /* background: green; */
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+footer h1 {
+    font-size: 1.5em;
+}
+
+footer p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer picture > img {
+    width: 100%;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 8px;
+}
+
+p img {
+    height: 1em;
+}
+
+footer p {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 4px;
+}
+
+.links * {
+    height: 24px;
+    width: 24px;
+}
+
+footer picture {
+    border: 0px;
 }

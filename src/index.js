@@ -5,3 +5,5 @@ import './images/profile-l.jpeg';
 import './images/github.png';
 import './images/linkedin.png';
 import './images/x-icon.png';
+import './images/call.svg';
+import './images/mail.svg';
