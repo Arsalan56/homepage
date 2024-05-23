@@ -7,3 +7,4 @@ import './images/linkedin.png';
 import './images/x-icon.png';
 import './images/call.svg';
 import './images/mail.svg';
+import './images/link.svg';

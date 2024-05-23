@@ -390,12 +390,66 @@ header h1 {
 }
 
 .project {
-    background: green;
     height: 225px;
     width: 100%;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 2px 2px 6px;
 }
 
+.screenshot {
+    height: 60%;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.description {
+    padding: 12px;
+    flex-grow: 1;
+    display: grid;
+    grid-template: min-content 1fr / 1fr min-content;
+    gap: 4px;
+}
+
+.description > p {
+    grid-column: 1 / -1;
+}
+.description h2 {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+.proj-links {
+    display: flex;
+    gap: 8px;
+}
+.proj-links img {
+    height: 25px;
+    width: 25px;
+}
+
+.sc-2 {
+    background: purple;
+}
+
+.sc-3 {
+    background: pink;
+}
+
+.sc-4 {
+    background: orange;
+}
+
+.sc-5 {
+    background: blue;
+}
+
+.sc-6 {
+    background: green;
+}
 main {
     display: flex;
     flex-direction: column;
@@ -403,7 +457,7 @@ main {
     align-items: center;
 }
 
-.cont > p {
+.cont > h2 {
     font-size: 1.5em;
     align-self: start;
     text-align: start;
