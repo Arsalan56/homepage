@@ -1,18 +1,21 @@
-# webpack-template
+# Homepage
 
-Simple template with webpack and eslint/prettier set up
+A mock-up homepage that can be used as a resume website.
 
 This project was made as a part of [The Odin Project](https://www.theodinproject.com/)'s full-stack JS curriculum.
 
-Live Preview: https://arsalan56.github.io/site/
+Live Preview: https://arsalan56.github.io/homepage/
 
 ## What I learned
 
--   Stuff
+-   Making websites with good accessibility
+-   Using the @media attribute
+-   Formatting CSS properly
 
 ### Skills displayed
 
--   Stuff
+-   Styling a website differently based on screen size
+-   Sectioning out a page neatly, part-by-part
 
 ### Languages used
 
